@@ -1,6 +1,6 @@
 [
 {
-  "model": "todoapp.article",
+  "model": "todoapp.todo",
   "pk": 1,
   "fields": {
     "description": "Закончить домашку",
@@ -9,7 +9,7 @@
   }
 },
 {
-  "model": "todoapp.article",
+  "model": "todoapp.todo",
   "pk": 2,
   "fields": {
     "description": "Встать раньше обеда",
