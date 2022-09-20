@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 
-from todoapp.models import Article
+from todoapp.models import Todo
 
 
 def add_view(request):
@@ -12,5 +12,5 @@ def add(request):
     description = request.POST.get('description')
     status = request.POST.get('status')
     deadline = request.POST.get('deadline')
-    article = Article.objects.create(description=description, status=status, deadline=deadline)
+    article = Todo.objects.create(description=description, status=status, deadline=deadline)
     return redirect('http://127.0.0.1:8000/')

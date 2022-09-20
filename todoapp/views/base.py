@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
-from todoapp.models import Article
+from todoapp.models import Todo
 
 
 def index_view(request):
-    articles = Article.objects.all()
+    articles = Todo.objects.all()
     context = {
         'articles': articles
     }
