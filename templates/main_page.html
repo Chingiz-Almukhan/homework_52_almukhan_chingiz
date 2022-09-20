@@ -13,27 +13,27 @@
         <div class="card rounded-3">
           <div class="card-body p-4">
 
-            <h4 class="text-center my-3 pb-3">To Do List</h4>
+            <h4 class="text-center my-3 pb-3">Список Задач</h4>
 
             <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
               <div class="col-12">
-                <a href="add/" type="submit" class="btn btn-primary">Add</a>
+                <a href="add/" type="submit" class="btn btn-primary">Добавить</a>
               </div>
               <div class="col-12">
-                <a href="edit/" type="submit" class="btn btn-warning">Edit</a>
+                <a href="edit/" type="submit" class="btn btn-warning">Редактировать</a>
               </div>
               <div class="col-12">
-                <a href="#" type="submit" class="btn btn-danger">Delete</a>
+                <a href="delete/" type="submit" class="btn btn-danger">Удалить</a>
               </div>
             </form>
 
             <table class="table mb-4">
               <thead>
                 <tr>
-                  <th scope="col">No.</th>
-                  <th scope="col">Todo</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Deadline</th>
+                  <th scope="col">#</th>
+                  <th scope="col">Задачи</th>
+                  <th scope="col">Статус</th>
+                  <th scope="col">Дедлайн</th>
                 </tr>
               </thead>
               <tbody>
@@ -42,7 +42,7 @@
                   <th scope="row">{{ article.pk }}</th>
                   <td>{{ article.description }}</td>
                   <td>{{ article.status }}</td>
-                  <td>{{ article.deadline }}</td>
+                  <td>{{ article.deadline|date:'Y-m-d' }}</td>
                 </tr>
               {% endfor %}
               </tbody>
