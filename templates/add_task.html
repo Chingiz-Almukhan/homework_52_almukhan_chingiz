@@ -26,7 +26,7 @@
               <div class="col-12">
                 <div class="form-outline">
                   <label>
-                    <select class="form-control mt-4">
+                    <select name='status' class="form-control mt-4">
                       {% for dat in statuses %}
                         <option value="{{ dat.0 }}">{{ dat.1 }}</option>
                       {% endfor %}
@@ -37,7 +37,7 @@
               </div>
               <div class="col-12">
                 <div class="form-outline">
-                  <label for="1"></label><input type="date" id="1" class="form-control" value="2022-09-19" min="2018-01-01" max="2090-12-31" />
+                  <label for="deadline"></label><input type="date" name="deadline" id="deadline" class="form-control" value="2022-09-19" min="2018-01-01" max="2090-12-31" />
                 </div>
               </div>
 
