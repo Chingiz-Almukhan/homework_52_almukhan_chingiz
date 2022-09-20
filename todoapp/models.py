@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Article(models.Model):
+class Todo(models.Model):
     CHOICES = (('new', 'Новая'), ('in process', 'В процессе'), ('ready', 'Сделано'))
 
     description = models.CharField(verbose_name='Описание', max_length=200, null=False, blank=False)
