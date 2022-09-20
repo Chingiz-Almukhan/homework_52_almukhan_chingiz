@@ -1,5 +1,5 @@
 from django.contrib import admin
 
-from todoapp.models import Article
+from todoapp.models import Todo
 
-admin.site.register(Article)
+admin.site.register(Todo)
