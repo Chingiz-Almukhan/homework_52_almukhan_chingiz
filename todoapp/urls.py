@@ -1,6 +1,9 @@
 from django.urls import path
 
-from todoapp.views import index_view, add_view, add, edit_view, edit, confirm_edit, delete_view, delete
+from todoapp.views.add import add_view, add
+from todoapp.views.base import index_view
+from todoapp.views.delete import delete_view, delete
+from todoapp.views.edit import edit_view, edit, confirm_edit
 
 urlpatterns = [
     path('', index_view),
