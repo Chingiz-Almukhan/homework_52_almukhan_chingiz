@@ -27,11 +27,13 @@ def add(request):
 def edit_view(request):
     return render(request, 'edit_page.html')
 
+
 def edit(request):
     pk = request.POST.get('id')
     articles = Article.objects.get(pk=pk)
     context = {'article': articles}
     return render(request, 'edit_task.html', context)
+
 
 def confirm_edit(request):
     pk = request.POST.get('id')
@@ -40,4 +42,15 @@ def confirm_edit(request):
     articles.status = request.POST.get('status')
     articles.deadline = request.POST.get('deadline')
     articles.save()
+    return redirect('http://127.0.0.1:8000/')
+
+
+def delete_view(request):
+    return render(request, 'delete_page.html')
+
+
+def delete(request):
+    pk = request.POST.get('id')
+    articles = Article.objects.get(pk=pk)
+    articles.delete()
     return redirect('http://127.0.0.1:8000/')
