@@ -1,0 +1,38 @@
+[
+{
+  "model": "todoapp.article",
+  "pk": 1,
+  "fields": {
+    "description": "Закончить домашку",
+    "status": "ready",
+    "deadline": "2022-09-19"
+  }
+},
+{
+  "model": "todoapp.article",
+  "pk": 2,
+  "fields": {
+    "description": "Встать раньше обеда",
+    "status": "new",
+    "deadline": "2022-09-19"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$oYd279JIjUPG621d9bRNkp$rQWwy3KZWawoWwEcgulOt0zYPj4W1oOTP/gsDu1rtPc=",
+    "last_login": "2022-09-19T21:41:07.015Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "root@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-09-19T21:40:39.383Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
